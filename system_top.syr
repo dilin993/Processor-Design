@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: system_top.prj
@@ -108,31 +108,33 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\state_machine.v" into library work
+Analyzing Verilog file "D:\Processor-Design\state_machine.v" into library work
 Parsing module <state_machine>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\Reg_8bit_clr.v" into library work
+Analyzing Verilog file "D:\Processor-Design\Reg_8bit_clr.v" into library work
 Parsing module <Reg_8bit_clr>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\Reg_8bit.v" into library work
+Analyzing Verilog file "D:\Processor-Design\Reg_8bit.v" into library work
 Parsing module <Reg_8bit>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\Reg_16bit.v" into library work
+Analyzing Verilog file "D:\Processor-Design\Reg_16bit.v" into library work
 Parsing module <Reg_16bit>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\MUX_BUS.v" into library work
+Analyzing Verilog file "D:\Processor-Design\MUX_BUS.v" into library work
 Parsing module <MUX_BUS>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\ALU.v" into library work
+Analyzing Verilog file "D:\Processor-Design\ALU.v" into library work
 Parsing module <ALU>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\uart_tx.v" into library work
+Analyzing Verilog file "D:\Processor-Design\uart_tx.v" into library work
 Parsing module <uart_tx>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\uart_rx.v" into library work
+Analyzing Verilog file "D:\Processor-Design\uart_rx.v" into library work
 Parsing module <uart_rx>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\ipcore_dir\instruction_ram.v" into library work
+Analyzing Verilog file "D:\Processor-Design\ipcore_dir\instruction_ram.v" into library work
 Parsing module <instruction_ram>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\ipcore_dir\data_ram.v" into library work
+Analyzing Verilog file "D:\Processor-Design\ipcore_dir\data_ram.v" into library work
 Parsing module <data_ram>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\debounce.v" into library work
+Analyzing Verilog file "D:\Processor-Design\debounce.v" into library work
 Parsing module <debounce>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\cpu_top.v" into library work
+Analyzing Verilog file "D:\Processor-Design\cpu_top.v" into library work
 Parsing module <cpu_top>.
-Analyzing Verilog file "D:\Xilinx\ProcessorDesign_8_9\system_top.v" into library work
+Analyzing Verilog file "D:\Processor-Design\ClockDivider.v" into library work
+Parsing module <ClockDivider>.
+Analyzing Verilog file "D:\Processor-Design\system_top.v" into library work
 Parsing module <system_top>.
 
 =========================================================================
@@ -140,14 +142,17 @@ Parsing module <system_top>.
 =========================================================================
 
 Elaborating module <system_top>.
-WARNING:HDLCompiler:872 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" Line 128: Using initial value of din_inst_ram_a since it is never assigned
+WARNING:HDLCompiler:872 - "D:\Processor-Design\system_top.v" Line 129: Using initial value of din_inst_ram_a since it is never assigned
+
+Elaborating module <ClockDivider>.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\ClockDivider.v" Line 30: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 Elaborating module <cpu_top>.
 
 Elaborating module <Reg_16bit>.
 
 Elaborating module <Reg_8bit_clr>.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\Reg_8bit_clr.v" Line 29: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\Reg_8bit_clr.v" Line 29: Result of 9-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <Reg_8bit>.
 
@@ -158,36 +163,36 @@ Elaborating module <ALU>.
 Elaborating module <state_machine>.
 
 Elaborating module <data_ram>.
-WARNING:HDLCompiler:1499 - "D:\Xilinx\ProcessorDesign_8_9\ipcore_dir\data_ram.v" Line 39: Empty module <data_ram> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\Processor-Design\ipcore_dir\data_ram.v" Line 39: Empty module <data_ram> remains a black box.
 
 Elaborating module <instruction_ram>.
-WARNING:HDLCompiler:1499 - "D:\Xilinx\ProcessorDesign_8_9\ipcore_dir\instruction_ram.v" Line 39: Empty module <instruction_ram> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" Line 188: Assignment to dout_inst_ram_b ignored, since the identifier is never used
+WARNING:HDLCompiler:1499 - "D:\Processor-Design\ipcore_dir\instruction_ram.v" Line 39: Empty module <instruction_ram> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\Processor-Design\system_top.v" Line 197: Assignment to dout_inst_ram_b ignored, since the identifier is never used
 
 Elaborating module <debounce>.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\debounce.v" Line 43: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\debounce.v" Line 43: Result of 17-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <uart_rx>.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\uart_rx.v" Line 85: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\uart_rx.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\uart_rx.v" Line 107: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\uart_rx.v" Line 85: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\uart_rx.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\uart_rx.v" Line 107: Result of 15-bit expression is truncated to fit in 14-bit target.
 
 Elaborating module <uart_tx>.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\uart_tx.v" Line 84: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\uart_tx.v" Line 96: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" Line 344: Result of 9-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" Line 383: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" Line 439: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:1127 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" Line 252: Assignment to program_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\Processor-Design\uart_tx.v" Line 84: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\uart_tx.v" Line 96: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\system_top.v" Line 353: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\system_top.v" Line 392: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Processor-Design\system_top.v" Line 448: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1127 - "D:\Processor-Design\system_top.v" Line 261: Assignment to program_complete ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <system_top>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\system_top.v".
+    Related source file is "D:\Processor-Design\system_top.v".
 WARNING:Xst:647 - Input <SW<7:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" line 176: Output port <doutb> of the instance <instRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Processor-Design\system_top.v" line 185: Output port <doutb> of the instance <instRAM> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <btn_ok_reg>.
     Found 2-bit register for signal <mode>.
     Found 1-bit register for signal <enable_inst_a>.
@@ -241,11 +246,11 @@ INFO:Xst:3210 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" line 176: Output po
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit subtractor for signal <program_size[7]_GND_1_o_sub_33_OUT> created at line 343.
-    Found 8-bit adder for signal <program_counter[7]_GND_1_o_add_34_OUT> created at line 344.
-    Found 16-bit adder for signal <addr_data_ram_b[15]_GND_1_o_add_57_OUT> created at line 439.
-    Found 8-bit comparator greater for signal <program_counter[7]_program_size[7]_LessThan_34_o> created at line 343
-    Found 16-bit comparator greater for signal <addr_data_ram_b[15]_PWR_1_o_LessThan_57_o> created at line 438
+    Found 8-bit subtractor for signal <program_size[7]_GND_1_o_sub_33_OUT> created at line 352.
+    Found 8-bit adder for signal <program_counter[7]_GND_1_o_add_34_OUT> created at line 353.
+    Found 16-bit adder for signal <addr_data_ram_b[15]_GND_1_o_add_57_OUT> created at line 448.
+    Found 8-bit comparator greater for signal <program_counter[7]_program_size[7]_LessThan_34_o> created at line 352
+    Found 16-bit comparator greater for signal <addr_data_ram_b[15]_PWR_1_o_LessThan_57_o> created at line 447
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  74 D-type flip-flop(s).
@@ -254,23 +259,33 @@ INFO:Xst:3210 - "D:\Xilinx\ProcessorDesign_8_9\system_top.v" line 176: Output po
 	inferred   3 Finite State Machine(s).
 Unit <system_top> synthesized.
 
+Synthesizing Unit <ClockDivider>.
+    Related source file is "D:\Processor-Design\ClockDivider.v".
+        DIV = 2
+    Found 2-bit register for signal <counter>.
+    Found 2-bit adder for signal <counter[1]_GND_2_o_add_1_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <ClockDivider> synthesized.
+
 Synthesizing Unit <cpu_top>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\cpu_top.v".
+    Related source file is "D:\Processor-Design\cpu_top.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <cpu_top> synthesized.
 
 Synthesizing Unit <Reg_16bit>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\Reg_16bit.v".
+    Related source file is "D:\Processor-Design\Reg_16bit.v".
     Found 16-bit register for signal <data>.
     Summary:
 	inferred  16 D-type flip-flop(s).
 Unit <Reg_16bit> synthesized.
 
 Synthesizing Unit <Reg_8bit_clr>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\Reg_8bit_clr.v".
+    Related source file is "D:\Processor-Design\Reg_8bit_clr.v".
     Found 8-bit register for signal <data>.
-    Found 8-bit adder for signal <data[7]_GND_4_o_add_1_OUT> created at line 29.
+    Found 8-bit adder for signal <data[7]_GND_5_o_add_1_OUT> created at line 29.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   8 D-type flip-flop(s).
@@ -278,21 +293,21 @@ Synthesizing Unit <Reg_8bit_clr>.
 Unit <Reg_8bit_clr> synthesized.
 
 Synthesizing Unit <Reg_8bit>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\Reg_8bit.v".
+    Related source file is "D:\Processor-Design\Reg_8bit.v".
     Found 8-bit register for signal <data>.
     Summary:
 	inferred   8 D-type flip-flop(s).
 Unit <Reg_8bit> synthesized.
 
 Synthesizing Unit <MUX_BUS>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\MUX_BUS.v".
+    Related source file is "D:\Processor-Design\MUX_BUS.v".
     Found 16-bit 8-to-1 multiplexer for signal <BUS> created at line 27.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MUX_BUS> synthesized.
 
 Synthesizing Unit <ALU>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\ALU.v".
+    Related source file is "D:\Processor-Design\ALU.v".
         A = 4'b0000
         B = 4'b0001
         ADD = 4'b0010
@@ -309,7 +324,7 @@ Synthesizing Unit <ALU>.
         notA = 4'b1101
     Found 16-bit subtractor for signal <ALUA[15]_ALUB[15]_sub_2_OUT> created at line 46.
     Found 16-bit adder for signal <ALUA[15]_ALUB[15]_add_0_OUT> created at line 42.
-    Found 16-bit adder for signal <ALUA[15]_GND_7_o_add_2_OUT> created at line 50.
+    Found 16-bit adder for signal <ALUA[15]_GND_8_o_add_2_OUT> created at line 50.
     Found 16-bit 15-to-1 multiplexer for signal <ALUR> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -317,7 +332,7 @@ Synthesizing Unit <ALU>.
 Unit <ALU> synthesized.
 
 Synthesizing Unit <state_machine>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\state_machine.v".
+    Related source file is "D:\Processor-Design\state_machine.v".
         FETCH1 = 8'b00000000
         FETCH2 = 8'b00000001
         FETCH3 = 8'b00000010
@@ -410,10 +425,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be g
 Unit <state_machine> synthesized.
 
 Synthesizing Unit <debounce>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\debounce.v".
+    Related source file is "D:\Processor-Design\debounce.v".
     Found 16-bit register for signal <count>.
     Found 1-bit register for signal <btn_reg>.
-    Found 16-bit adder for signal <count[15]_GND_37_o_add_4_OUT> created at line 43.
+    Found 16-bit adder for signal <count[15]_GND_38_o_add_4_OUT> created at line 43.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
@@ -421,7 +436,7 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 Synthesizing Unit <uart_rx>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\uart_rx.v".
+    Related source file is "D:\Processor-Design\uart_rx.v".
     Found 14-bit register for signal <counter>.
     Found 1-bit register for signal <start_ok>.
     Found 1-bit register for signal <rx_done>.
@@ -439,9 +454,9 @@ Synthesizing Unit <uart_rx>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 14-bit adder for signal <counter[13]_GND_38_o_add_12_OUT> created at line 85.
-    Found 4-bit adder for signal <bitIndex[3]_GND_38_o_add_18_OUT> created at line 97.
-    Found 4-bit comparator greater for signal <PWR_39_o_bitIndex[3]_LessThan_18_o> created at line 94
+    Found 14-bit adder for signal <counter[13]_GND_39_o_add_12_OUT> created at line 85.
+    Found 4-bit adder for signal <bitIndex[3]_GND_39_o_add_18_OUT> created at line 97.
+    Found 4-bit comparator greater for signal <PWR_40_o_bitIndex[3]_LessThan_18_o> created at line 94
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  29 D-type flip-flop(s).
@@ -451,7 +466,7 @@ Synthesizing Unit <uart_rx>.
 Unit <uart_rx> synthesized.
 
 Synthesizing Unit <uart_tx>.
-    Related source file is "D:\Xilinx\ProcessorDesign_8_9\uart_tx.v".
+    Related source file is "D:\Processor-Design\uart_tx.v".
     Found 14-bit register for signal <bitTmr>.
     Found 4-bit register for signal <bitIndex>.
     Found 10-bit register for signal <txData>.
@@ -468,9 +483,9 @@ Synthesizing Unit <uart_tx>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 14-bit adder for signal <bitTmr[13]_GND_39_o_add_12_OUT> created at line 84.
-    Found 4-bit adder for signal <bitIndex[3]_GND_39_o_add_20_OUT> created at line 96.
-    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_39_o_Mux_31_o> created at line 113.
+    Found 14-bit adder for signal <bitTmr[13]_GND_40_o_add_12_OUT> created at line 84.
+    Found 4-bit adder for signal <bitIndex[3]_GND_40_o_add_20_OUT> created at line 96.
+    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_40_o_Mux_31_o> created at line 113.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  29 D-type flip-flop(s).
@@ -484,18 +499,20 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  64x15-bit single-port Read Only RAM                   : 1
-# Adders/Subtractors                                   : 11
+# Adders/Subtractors                                   : 12
  14-bit adder                                          : 2
  16-bit adder                                          : 3
  16-bit addsub                                         : 1
+ 2-bit adder                                           : 1
  4-bit adder                                           : 2
  8-bit adder                                           : 2
  8-bit subtractor                                      : 1
-# Registers                                            : 39
+# Registers                                            : 40
  1-bit register                                        : 15
  10-bit register                                       : 1
  14-bit register                                       : 2
  16-bit register                                       : 9
+ 2-bit register                                        : 1
  4-bit register                                        : 2
  8-bit register                                        : 9
  9-bit register                                        : 1
@@ -530,6 +547,10 @@ Loading core <data_ram> for timing and area information for instance <dataRAM>.
 Loading core <instruction_ram> for timing and area information for instance <instRAM>.
 WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <txMode>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <txData_9> (without init value) has a constant value of 1 in block <txMode>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ClockDivider>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <ClockDivider> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Reg_8bit_clr>.
 The following registers are absorbed into counter <data>: 1 register on signal <data>.
@@ -575,9 +596,10 @@ Macro Statistics
  16-bit addsub                                         : 1
  4-bit adder                                           : 1
  8-bit subtractor                                      : 1
-# Counters                                             : 6
+# Counters                                             : 7
  14-bit up counter                                     : 1
  16-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
  4-bit up counter                                      : 1
  8-bit up counter                                      : 2
 # Registers                                            : 219
@@ -675,15 +697,15 @@ Optimizing unit <Reg_8bit> ...
 
 Optimizing unit <system_top> ...
 
+Optimizing unit <uart_rx> ...
+
+Optimizing unit <uart_tx> ...
+
 Optimizing unit <cpu_top> ...
 
 Optimizing unit <state_machine> ...
 
 Optimizing unit <ALU> ...
-
-Optimizing unit <uart_rx> ...
-
-Optimizing unit <uart_tx> ...
 INFO:Xst:2261 - The FF/Latch <enable_inst_a> in Unit <system_top> is equivalent to the following 2 FFs/Latches, which will be removed : <cpu_enable> <enable_data_a> 
 
 Mapping all equations...
@@ -703,8 +725,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 295
- Flip-Flops                                            : 295
+# Registers                                            : 297
+ Flip-Flops                                            : 297
 
 =========================================================================
 
@@ -727,11 +749,11 @@ Top Level Output File Name         : system_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 700
+# BELS                             : 702
 #      GND                         : 3
-#      INV                         : 6
+#      INV                         : 7
 #      LUT1                        : 71
-#      LUT2                        : 29
+#      LUT2                        : 30
 #      LUT3                        : 63
 #      LUT4                        : 44
 #      LUT5                        : 68
@@ -740,8 +762,8 @@ Primitive and Black Box Usage:
 #      MUXF7                       : 19
 #      VCC                         : 1
 #      XORCY                       : 108
-# FlipFlops/Latches                : 338
-#      FD                          : 44
+# FlipFlops/Latches                : 340
+#      FD                          : 46
 #      FDE                         : 193
 #      FDR                         : 46
 #      FDR_1                       : 8
@@ -751,9 +773,10 @@ Primitive and Black Box Usage:
 #      RAMB16BWER                  : 32
 #      RAMB8BWER                   : 1
 # Clock Buffers                    : 3
-#      BUFG                        : 3
-# IO Buffers                       : 14
-#      IBUF                        : 5
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 4
 #      OBUF                        : 9
 
 Device utilization summary:
@@ -763,15 +786,15 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             337  out of  54576     0%  
- Number of Slice LUTs:                  469  out of  27288     1%  
-    Number used as Logic:               469  out of  27288     1%  
+ Number of Slice Registers:             339  out of  54576     0%  
+ Number of Slice LUTs:                  471  out of  27288     1%  
+    Number used as Logic:               471  out of  27288     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    584
-   Number with an unused Flip Flop:     247  out of    584    42%  
-   Number with an unused LUT:           115  out of    584    19%  
-   Number of fully used LUT-FF pairs:   222  out of    584    38%  
+ Number of LUT Flip Flop pairs used:    586
+   Number with an unused Flip Flop:     247  out of    586    42%  
+   Number with an unused LUT:           115  out of    586    19%  
+   Number of fully used LUT-FF pairs:   224  out of    586    38%  
    Number of unique control sets:        25
 
 IO Utilization: 
@@ -802,13 +825,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------------------+----------------------------------------------+-------+
-Clock Signal                                                       | Clock buffer(FF name)                        | Load  |
--------------------------------------------------------------------+----------------------------------------------+-------+
-CLK                                                                | IBUF+BUFG                                    | 212   |
-instance_name/clk(instance_name/Mmux_clk11:O)                      | BUFG(*)(instance_name/PC/data_7)             | 120   |
-instance_name/STATEMACHINE/_n0125(instance_name/STATEMACHINE/out:O)| BUFG(*)(instance_name/STATEMACHINE/ALU_SEL_1)| 39    |
--------------------------------------------------------------------+----------------------------------------------+-------+
+-------------------------------------------------------------------+--------------------------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)                      | Load  |
+-------------------------------------------------------------------+--------------------------------------------+-------+
+CLK                                                                | BUFGP                                      | 214   |
+instance_name/clk(instance_name/Mmux_clk11:O)                      | BUFG(*)(instance_name/PC/data_7)           | 120   |
+instance_name/STATEMACHINE/_n0125(instance_name/STATEMACHINE/out:O)| BUFG(*)(instance_name/STATEMACHINE/B_SEL_1)| 39    |
+-------------------------------------------------------------------+--------------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -833,7 +856,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 6.784ns (frequency: 147.396MHz)
-  Total number of paths / destination ports: 4674 / 1036
+  Total number of paths / destination ports: 4677 / 1038
 -------------------------------------------------------------------------
 Delay:               6.784ns (Levels of Logic = 6)
   Source:            program_counter_1 (FF)
@@ -912,7 +935,7 @@ Delay:               7.014ns (Levels of Logic = 11)
      MUXF7:I0->O           4   0.131   0.684  instance_name/ALU16/Z<15>4_SW0 (N49)
      LUT6:I5->O            1   0.205   0.000  instance_name/ALU16/Z<15>4_SW3_SW0_G (N112)
      MUXF7:I1->O           1   0.140   0.580  instance_name/ALU16/Z<15>4_SW3_SW0 (N87)
-     LUT6:I5->O            1   0.205   0.000  instance_name/STATEMACHINE/Mmux__n05717 (instance_name/STATEMACHINE/_n0571<7>)
+     LUT6:I5->O            1   0.205   0.000  instance_name/STATEMACHINE/Mmux__n05737 (instance_name/STATEMACHINE/_n0573<7>)
      LD:D                      0.037          instance_name/STATEMACHINE/next_state_1
     ----------------------------------------
     Total                      7.014ns (2.524ns logic, 4.490ns route)
@@ -1016,14 +1039,14 @@ instance_name/clk                |    5.200|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.99 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.54 secs
  
 --> 
 
-Total memory usage is 295076 kilobytes
+Total memory usage is 295048 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   48 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

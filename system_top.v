@@ -95,6 +95,7 @@ module system_top(
 	
 	// CPU wires
 	wire cpu_finish;
+	wire CPU_CLK;
 	
 	
 	
@@ -135,11 +136,19 @@ module system_top(
 	
 	
 	
+	/********* CPU CLOCK *****************/
+	// Instantiate the module
+	ClockDivider CPU_CLOCK_GENERATOR (
+    .CLK_IN(CLK), 
+    .CLK_OUT(CPU_CLK)
+    );
+	/**********************************/
+	
 	
 	/********* CPU TOP *****************/
 	// Instantiate the cpu_top
 	cpu_top instance_name (
-		 .clk_in(CLK), 
+		 .clk_in(CPU_CLK), 
 		 .enable(cpu_enable), 
 		 .reset(btn_reset_clicked), 
 		 .data_w(data_w_a), 

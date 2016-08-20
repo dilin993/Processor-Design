@@ -37,10 +37,10 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-OK          |    2.841(R)|      SLOW  |   -1.527(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-RESET       |    4.454(R)|      SLOW  |   -2.514(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-RX          |    4.464(R)|      SLOW  |   -1.795(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-SW<0>       |    4.489(R)|      SLOW  |   -2.150(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+OK          |    2.497(R)|      SLOW  |   -1.313(R)|      SLOW  |CLK_BUFGP         |   0.000|
+RESET       |    4.122(R)|      SLOW  |   -2.247(R)|      FAST  |CLK_BUFGP         |   0.000|
+RX          |    5.264(R)|      SLOW  |   -1.741(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW<0>       |    4.215(R)|      SLOW  |   -1.986(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -48,14 +48,14 @@ Clock CLK to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-LED<0>      |        10.244(R)|      SLOW  |         5.666(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-LED<1>      |        10.313(R)|      SLOW  |         5.711(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-LED<2>      |         9.926(R)|      SLOW  |         5.436(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-LED<4>      |        11.262(R)|      SLOW  |         5.741(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-LED<5>      |        13.189(R)|      SLOW  |         6.839(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-LED<6>      |        12.791(R)|      SLOW  |         6.740(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-LED<7>      |        12.636(R)|      SLOW  |         6.716(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-TX          |        10.318(R)|      SLOW  |         5.682(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+LED<0>      |        10.228(R)|      SLOW  |         5.722(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<1>      |        10.226(R)|      SLOW  |         5.655(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<2>      |        10.607(R)|      SLOW  |         5.937(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<4>      |        11.346(R)|      SLOW  |         5.945(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<5>      |        12.747(R)|      SLOW  |         6.889(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<6>      |        13.038(R)|      SLOW  |         7.110(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<7>      |        12.483(R)|      SLOW  |         6.656(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX          |        10.313(R)|      SLOW  |         5.679(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -63,11 +63,11 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    9.434|         |    1.513|         |
+CLK            |    8.371|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Aug 20 20:35:49 2016 
+Analysis completed Sat Aug 20 21:45:46 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
