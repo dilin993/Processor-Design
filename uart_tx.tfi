@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+uart_tx instance_name (
+    .SEND(SEND), 
+    .DATA(DATA), 
+    .CLK(CLK), 
+    .READY(READY), 
+    .TX(TX)
+    );
+
+

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj ProcessorDesign_8_9 -o D:/Xilinx/ProcessorDesign_8_9/Reg_16bit.tfi -lib work D:/Xilinx/ProcessorDesign_8_9//Reg_16bit.v -module Reg_16bit -template E:/Programs/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

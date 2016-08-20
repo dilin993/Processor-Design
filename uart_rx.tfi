@@ -1,0 +1,13 @@
+
+
+
+	// Instantiate the module
+	uart_rx instance_name (
+    .CLK(CLK), 
+    .RX(RX), 
+    .RESET(RESET), 
+    .RX_DONE(RX_DONE), 
+    .RX_DATA(RX_DATA)
+    );
+
+

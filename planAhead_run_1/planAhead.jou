@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Aug 13 11:03:05 2016
+# Process ID: 12692
+# Log file: D:/Xilinx/ProcessorDesign_8_9/planAhead_run_1/planAhead.log
+# Journal file: D:/Xilinx/ProcessorDesign_8_9/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Xilinx/ProcessorDesign_8_9/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin U18 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin D4 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {LED[6]}]
+endgroup
+startgroup
+set_property package_pin N12 [get_ports {LED[7]}]
+endgroup
+set_property package_pin "" [get_ports [list  {SW[7]}]]
+startgroup
+set_property package_pin A10 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property package_pin D14 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property package_pin C14 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {SW[3]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {SW[4]}]
+endgroup
+startgroup
+set_property package_pin R5 [get_ports {SW[5]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {SW[6]}]
+endgroup
+startgroup
+set_property package_pin E4 [get_ports {SW[7]}]
+endgroup
+startgroup
+set_property package_pin L15 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports OK]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports RESET]
+endgroup
+startgroup
+set_property package_pin A16 [get_ports RX]
+endgroup
+startgroup
+set_property package_pin B16 [get_ports TX]
+endgroup
+startgroup
+set_property package_pin A16 [get_ports RX]
+endgroup
+save_constraints

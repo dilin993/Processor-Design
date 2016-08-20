@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+Reg_8bit_clr instance_name (
+    .clk(clk), 
+    .load(load), 
+    .clr(clr), 
+    .data_in(data_in), 
+    .data_out(data_out)
+    );
+
+

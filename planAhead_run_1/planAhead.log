@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Aug 13 11:03:05 2016
+# Process ID: 12692
+# Log file: D:/Xilinx/ProcessorDesign_8_9/planAhead_run_1/planAhead.log
+# Journal file: D:/Xilinx/ProcessorDesign_8_9/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Xilinx/ProcessorDesign_8_9/pa.fromHdl.tcl
+# create_project -name ProcessorDesign_8_9 -dir "D:/Xilinx/ProcessorDesign_8_9/planAhead_run_1" -part xc6slx45csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "system_top.ucf" [current_fileset -constrset]
+Adding file 'D:/Xilinx/ProcessorDesign_8_9/system_top.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/data_ram.ngc}]
+# add_files [list {ipcore_dir/instruction_ram.ngc}]
+# set hdlfile [add_files [list {state_machine.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Reg_8bit_clr.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Reg_8bit.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Reg_16bit.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX_BUS.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ALU.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {uart_tx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {uart_rx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/instruction_ram.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/data_ram.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {debounce.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cpu_top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {system_top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top system_top $srcset
+# add_files [list {system_top.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/data_ram.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/instruction_ram.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45csg324-3
+Using Verific elaboration
+Parsing VHDL file "E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/state_machine.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/Reg_8bit_clr.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/Reg_8bit.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/Reg_16bit.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/MUX_BUS.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/ALU.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/uart_tx.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/uart_rx.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/ipcore_dir/instruction_ram.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/ipcore_dir/data_ram.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/debounce.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/cpu_top.v" into library work
+Analyzing Verilog file "D:/Xilinx/ProcessorDesign_8_9/system_top.v" into library work
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design data_ram.ngc ...
+WARNING:NetListWriters:298 - No output is written to data_ram.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file data_ram.edif ...
+ngc2edif: Total memory usage is 84920 kilobytes
+
+Reading core file 'D:/Xilinx/ProcessorDesign_8_9/ipcore_dir/data_ram.ngc' for (cell view 'data_ram', library 'work', file 'data_ram.v')
+Parsing EDIF File [./.Xil/PlanAhead-12692-DILIN-LAPTOP/ngc2edif/data_ram.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-12692-DILIN-LAPTOP/ngc2edif/data_ram.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design instruction_ram.ngc ...
+WARNING:NetListWriters:298 - No output is written to instruction_ram.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file instruction_ram.edif ...
+ngc2edif: Total memory usage is 80336 kilobytes
+
+Reading core file 'D:/Xilinx/ProcessorDesign_8_9/ipcore_dir/instruction_ram.ngc' for (cell view 'instruction_ram', library 'work', file 'instruction_ram.v')
+Parsing EDIF File [./.Xil/PlanAhead-12692-DILIN-LAPTOP/ngc2edif/instruction_ram.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-12692-DILIN-LAPTOP/ngc2edif/instruction_ram.edif]
+Loading clock regions from E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/csg324/Package.xml
+Loading io standards from E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/Programs/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Xilinx/ProcessorDesign_8_9/system_top.ucf]
+Finished Parsing UCF File [D:/Xilinx/ProcessorDesign_8_9/system_top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: b28ce3ac
+open_rtl_design: Time (s): elapsed = 00:00:19 . Memory (MB): peak = 645.578 ; gain = 176.691
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin U18 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin D4 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {LED[6]}]
+endgroup
+startgroup
+set_property package_pin N12 [get_ports {LED[7]}]
+endgroup
+set_property package_pin "" [get_ports [list  {SW[7]}]]
+startgroup
+set_property package_pin A10 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property package_pin D14 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property package_pin C14 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {SW[3]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {SW[4]}]
+endgroup
+startgroup
+set_property package_pin R5 [get_ports {SW[5]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {SW[6]}]
+endgroup
+startgroup
+set_property package_pin E4 [get_ports {SW[7]}]
+endgroup
+startgroup
+set_property package_pin L15 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports OK]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports RESET]
+endgroup
+startgroup
+set_property package_pin A16 [get_ports RX]
+endgroup
+startgroup
+set_property package_pin B16 [get_ports TX]
+endgroup
+startgroup
+set_property package_pin A16 [get_ports RX]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/Xilinx/ProcessorDesign_8_9\planAhead_pid12692.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Aug 13 13:18:09 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Xilinx\ProcessorDesign_8_9\system_top.ncd
+OUTFILE=D:\Xilinx\ProcessorDesign_8_9\system_top.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=D:\Xilinx\ProcessorDesign_8_9
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,3 @@
+vhdtdtfi -lib work D:/Xilinx/ProcessorDesign_8_9/uart_tx.v -lang verilog -prj ProcessorDesign_8_9 -o uart_tx.spl -module uart_tx -template E:/Programs/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj ProcessorDesign_8_9 -o D:/Xilinx/ProcessorDesign_8_9/uart_tx.tfi -lib work D:/Xilinx/ProcessorDesign_8_9//uart_tx.v -module uart_tx -template E:/Programs/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 uart_tx.spl D:/Xilinx/ProcessorDesign_8_9/uart_tx.sym 

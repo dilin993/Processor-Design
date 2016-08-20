@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj ProcessorDesign_8_9 -o D:/Xilinx/ProcessorDesign_8_9/uart_rx.tfi -lib work D:/Xilinx/ProcessorDesign_8_9//uart_rx.v -module uart_rx -template E:/Programs/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

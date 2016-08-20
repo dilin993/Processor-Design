@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj ProcessorDesign_8_9 -o D:/Xilinx/ProcessorDesign_8_9/ALU.tfi -lib work D:/Xilinx/ProcessorDesign_8_9//ALU.v -module ALU -template E:/Programs/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

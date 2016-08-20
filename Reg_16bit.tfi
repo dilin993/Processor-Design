@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Reg_16bit instance_name (
+    .clk(clk), 
+    .load(load), 
+    .data_in(data_in), 
+    .data_out(data_out)
+    );
+
+

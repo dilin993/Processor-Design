@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+MUX_BUS instance_name (
+    .Select(Select), 
+    .DataM(DataM), 
+    .InstM(InstM), 
+    .PC(PC), 
+    .R(R), 
+    .S(S), 
+    .T(T), 
+    .U(U), 
+    .AC(AC), 
+    .BUS(BUS)
+    );
+
+

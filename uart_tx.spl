@@ -1,0 +1,11 @@
+[Inputs]
+SEND
+CLK
+=DATA[7:0]=
+[Outputs]
+READY
+TX
+[BiDir]
+[ATTRIBUTES]
+VeriModel uart_tx
+

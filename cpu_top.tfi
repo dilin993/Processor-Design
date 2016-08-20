@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+cpu_top instance_name (
+    .clk_in(clk_in), 
+    .enable(enable), 
+    .reset(reset), 
+    .data_w(data_w), 
+    .addr_data_ram(addr_data_ram), 
+    .din_data_ram(din_data_ram), 
+    .dout_data_ram(dout_data_ram), 
+    .inst_w(inst_w), 
+    .addr_inst_ram(addr_inst_ram), 
+    .dout_inst_ram(dout_inst_ram), 
+    .finish(finish)
+    );
+
+
