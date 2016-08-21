@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+inst_ram_test instance_name (
+    .clk_in(clk_in), 
+    .inst_w(inst_w), 
+    .addr(addr), 
+    .dout(dout)
+    );
+
+

@@ -30,7 +30,10 @@ module cpu_top(
 	output[7:0] addr_inst_ram, // instruction memory 8bit address
 	//output[7:0]  din_inst_ram, ***not in use since instructions are never changed by cpu
 	input[7:0] dout_inst_ram,
-	output finish // Signal to stop the cpu
+	output finish, // Signal to stop the cpu
+	output[15:0] OUT_R,
+	output[15:0] OUT_S,
+	output[15:0] OUT_AC
     );
 	 
 	 /* wire definitions */
@@ -97,6 +100,7 @@ module cpu_top(
     .data_in(BUS), 
     .data_out(R_OUT)
     );
+	 assign OUT_R = R_OUT;
 	 /*************************/
 	 
 	 
@@ -108,6 +112,7 @@ module cpu_top(
     .data_in(BUS), 
     .data_out(S_OUT)
     );
+	 assign OUT_S = S_OUT;
 	 /*************************/
 	 
 	 
@@ -141,6 +146,7 @@ module cpu_top(
     .data_in(ALU_OUT), 
     .data_out(AC_OUT)
     );
+	 assign OUT_AC = AC_OUT;
 	 /*************************/
 	 
 	 

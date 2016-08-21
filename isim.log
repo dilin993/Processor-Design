@@ -1,0 +1,19 @@
+ISim log file
+Running: D:\Processor-Design\CPU_test_bench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Processor-Design/CPU_test_bench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Processor-Design/CPU_test_bench.v" Line 41.  For instance CPU_test_bench/inst_ram/, width 16 of formal port addr is not equal to width 8 of actual signal addr_inst_ram.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Processor-Design/CPU_test_bench.v" Line 41.  For instance CPU_test_bench/inst_ram/, width 16 of formal port addr is not equal to width 8 of actual signal addr_inst_ram.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+Stopped at time : 1040 ns : File "D:/Processor-Design/CPU_test_bench.v" Line 98

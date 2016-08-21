@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Processor-Design/CPU_test_bench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CPU_test_bench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/CPU_test_bench/dout_data_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dout_data_ram[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_data_ram[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/dout_inst_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dout_inst_ram[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_inst_ram[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/data_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_w</obj_property>
+      <obj_property name="ObjectShortName">data_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/addr_data_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_data_ram[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_data_ram[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/din_data_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">din_data_ram[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_data_ram[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/inst_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inst_w</obj_property>
+      <obj_property name="ObjectShortName">inst_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/addr_inst_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_inst_ram[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_inst_ram[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/finish" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">finish</obj_property>
+      <obj_property name="ObjectShortName">finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/clk_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test_bench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+</wave_config>

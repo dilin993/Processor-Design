@@ -1,0 +1,37 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Processor-Design/CPU_test_bench_isim_beh.exe" -prj "D:/Processor-Design/CPU_test_bench_beh.prj" "work.CPU_test_bench" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Processor-Design/state_machine.v" into library work
+Analyzing Verilog file "D:/Processor-Design/Reg_8bit_clr.v" into library work
+Analyzing Verilog file "D:/Processor-Design/Reg_8bit.v" into library work
+Analyzing Verilog file "D:/Processor-Design/Reg_16bit.v" into library work
+Analyzing Verilog file "D:/Processor-Design/MUX_BUS.v" into library work
+Analyzing Verilog file "D:/Processor-Design/ALU.v" into library work
+Analyzing Verilog file "D:/Processor-Design/inst_ram_test.v" into library work
+Analyzing Verilog file "D:/Processor-Design/data_ram_test.v" into library work
+Analyzing Verilog file "D:/Processor-Design/cpu_top.v" into library work
+Analyzing Verilog file "D:/Processor-Design/CPU_test_bench.v" into library work
+Analyzing Verilog file "E:/Programs/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/Processor-Design/CPU_test_bench.v" Line 80: Size mismatch in connection of port <addr>. Formal port size is 16-bit while actual signal size is 8-bit.
+Completed static elaboration
+Compiling module Reg_16bit
+Compiling module Reg_8bit_clr
+Compiling module Reg_8bit
+Compiling module MUX_BUS
+Compiling module ALU
+Compiling module state_machine
+Compiling module cpu_top
+Compiling module data_ram_test
+Compiling module inst_ram_test
+Compiling module CPU_test_bench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\CPU_test_bench_isim_beh.exe.sim\libPortability.dll".
+Compiled 11 Verilog Units
+Built simulation executable D:/Processor-Design/CPU_test_bench_isim_beh.exe
+Fuse Memory Usage: 28340 KB
+Fuse CPU Usage: 530 ms
